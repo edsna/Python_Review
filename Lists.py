@@ -1,0 +1,56 @@
+import random 	#random num generator
+import sys	#sys module 
+import os	#OS module
+
+'''
+Lists
+
+'''
+fruits = ['Apples', 'Oranges', 'Bananas']
+
+
+print("First item is: ", fruits[0]) 
+
+print("--------Changing Values--------")
+
+fruits[0] = "Peaches"
+print("First item is: ", fruits[0])
+
+print(fruits[1:3])
+
+print("--------Mixed Lists--------")
+cars = ['BMW', 'Ferrari', 'VW']
+
+mixedList = [cars, fruits]
+
+print(mixedList)
+
+print("Second item of second list is: ", mixedList[1][2])
+
+print("Second item of first list is: ", mixedList[0][2])
+
+fruits.append('Pineaple')
+print(fruits)
+
+cars.insert(1, "Edson")
+cars.remove("Edson")
+print("--------Sorting--------")
+fruits.sort()
+print(fruits)
+
+print("--------Reverse Sorting--------")
+fruits.reverse()
+print(fruits)
+
+print("--------Deleting from List--------")
+del fruits[3]
+print(fruits)
+
+print("--------Combining Lists--------")
+final = fruits + cars
+print(final)
+
+print(len(fruits))
+print(max(fruits))
+print(min(fruits))
+
